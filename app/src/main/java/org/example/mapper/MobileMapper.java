@@ -16,7 +16,8 @@ import org.mapstruct.*;
 public abstract class MobileMapper {
     public abstract Mobile map(MobileCreateDTO dto);
 
-    public abstract MobileDTO map(Mobile category);
+    public abstract MobileDTO map(Mobile model);
+    public abstract Mobile map(MobileDTO category);
 
     public abstract void update(MobileUpdateDTO dto, @MappingTarget Mobile model);
 }
