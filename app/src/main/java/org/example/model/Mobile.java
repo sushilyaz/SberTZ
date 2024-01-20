@@ -17,7 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import java.time.LocalDate;
 
 
-// Сущность
+// Сущность, createdAt добавил для наглядности, чтобы DTO возврата отличалась от DTO update
 @Entity
 @Table(name = "mobile")
 @EntityListeners(AuditingEntityListener.class)
