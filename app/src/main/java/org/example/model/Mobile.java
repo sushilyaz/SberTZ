@@ -16,6 +16,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.time.LocalDate;
 
+
+// Сущность
 @Entity
 @Table(name = "mobile")
 @EntityListeners(AuditingEntityListener.class)

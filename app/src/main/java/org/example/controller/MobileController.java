@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+// Контроллер для модели Mobile, использующий сервис
 @RestController
 @RequestMapping("/mobiles")
 public class MobileController {

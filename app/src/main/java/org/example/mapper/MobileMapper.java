@@ -6,7 +6,7 @@ import org.example.dto.MobileUpdateDTO;
 import org.example.model.Mobile;
 import org.mapstruct.*;
 
-// BEGIN
+// Автоматическая генерация из сущности в dto и обратно
 @Mapper(
         uses = { JsonNullableMapper.class, ReferenceMapper.class },
         nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE,

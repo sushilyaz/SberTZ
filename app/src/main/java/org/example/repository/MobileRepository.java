@@ -8,5 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface MobileRepository extends JpaRepository<Mobile, Long> {
+    // метод ниже необходим для тестирования
     Optional<Mobile> findByModelAndVersion(String model, String version);
 }

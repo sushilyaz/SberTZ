@@ -18,6 +18,7 @@ public class ModelGenerator {
     @Autowired
     private Faker faker;
 
+    // инстанс объекта с данными (в MobilControllerTest в комментах написал подробнее про instancio)
     @PostConstruct
     private void init() {
         mobileModel = Instancio.of(Mobile.class)

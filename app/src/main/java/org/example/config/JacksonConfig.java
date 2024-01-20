@@ -7,6 +7,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+// Необходимо для реализации частичного обновления (настройка ObjectMapper для корректной обработки null-значений JsonNullable)
 @Configuration
 public class JacksonConfig {
     @Bean

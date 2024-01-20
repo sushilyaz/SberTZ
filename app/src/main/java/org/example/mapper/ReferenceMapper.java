@@ -6,7 +6,7 @@ import org.mapstruct.TargetType;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import jakarta.persistence.EntityManager;
-
+// также для работы с JsonNullable
 @Mapper(
         componentModel = MappingConstants.ComponentModel.SPRING
 )

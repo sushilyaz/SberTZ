@@ -6,7 +6,6 @@ import org.example.model.Mobile;
 import org.example.repository.MobileRepository;
 import org.example.util.ModelGenerator;
 import org.instancio.Instancio;
-import org.instancio.Model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +45,11 @@ public class MobileControllerTest {
 
     private Mobile testMobile;
 
+    /*
+        Полностью изолированные тесты друг от друга, тесты написаны на каждый маршрут + на частичное обновление
+        Для тестирования использовал instancio, чтобы не тратить время на ручную настройку объектов в тестах
+        Сами тесты пояснять не вижу смысла, т.к. они тривиальные, но мне кажется большего здесь и не надо
+     */
     @BeforeEach
     public void setUp() {
         testMobile = Instancio.of(modelGenerator.getMobileModel()).create();

@@ -15,6 +15,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    // для генерации тестовых значений, в test->util->ModelGenerator spring автоматически будет тянуть данные
     @Bean
     public Faker getFaker() {
         return new Faker(new Locale("en", "US"));

@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
+// dto возврата
 @Getter
 @Setter
 public class MobileDTO {
